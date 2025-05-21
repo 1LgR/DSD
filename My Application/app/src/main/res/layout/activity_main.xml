@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="121dp"
+        android:layout_height="97dp"
+        android:src="@drawable/controller"
+        tools:layout_editor_absoluteX="145dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="40dp"
+        android:layout_height="38dp"
+        android:layout_marginEnd="88dp"
+        android:background="@drawable/menu"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="40dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="52dp"
+        android:background="@drawable/alarm"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="40dp"
+        android:layout_height="44dp"
+        android:layout_marginStart="96dp"
+        android:background="@drawable/account"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        tools:layout_editor_absoluteY="31dp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="424dp"
+        android:layout_height="52dp"
+        android:background="@drawable/retangulo"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="681dp" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/home"
+        tools:layout_editor_absoluteX="57dp"
+        tools:layout_editor_absoluteY="696dp" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/negocio"
+        tools:layout_editor_absoluteX="127dp"
+        tools:layout_editor_absoluteY="693dp" />
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/search"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="693dp" />
+
+    <Button
+        android:id="@+id/button8"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/estrela"
+        tools:layout_editor_absoluteX="258dp"
+        tools:layout_editor_absoluteY="693dp" />
+
+    <Button
+        android:id="@+id/button9"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/buying"
+        tools:layout_editor_absoluteX="318dp"
+        tools:layout_editor_absoluteY="696dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:text="Novidades"
+        android:textColor="#F2F2F2"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="17dp"
+        tools:layout_editor_absoluteY="186dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="150dp"
+        android:layout_height="39dp"
+        android:text="Ofertas"
+        android:textColor="#F2F2F2"
+        android:textSize="24sp"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="368dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:background="@drawable/novidade"
+        tools:layout_editor_absoluteX="-14dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:background="@drawable/novidade"
+        tools:layout_editor_absoluteX="107dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:background="@drawable/novidade"
+        tools:layout_editor_absoluteX="230dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="107dp"
+        android:layout_height="107dp"
+        android:background="@drawable/novidade"
+        tools:layout_editor_absoluteX="348dp"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:background="@drawable/oferta"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="423dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:background="@drawable/oferta"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="486dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="342dp"
+        android:layout_height="50dp"
+        android:background="@drawable/oferta"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="546dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
