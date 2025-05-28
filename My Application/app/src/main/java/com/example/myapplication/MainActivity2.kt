@@ -1,5 +1,6 @@
 package com.example.myapplication
 
+import android.app.AlertDialog
 import android.os.Bundle
 import android.widget.Button
 import androidx.activity.ComponentActivity
@@ -14,12 +15,26 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.myapplication.ui.theme.MyApplicationTheme
 import android.content.Intent
+import android.widget.Toast
 
 class MainActivity2 : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main2)
+
+        val button2 = findViewById<Button>(R.id.button2)
+        button2.setOnClickListener {
+            val alertDialog = AlertDialog.Builder(this)
+                .setIconAttribute(android.R.attr.alertDialogIcon)
+                .setTitle("Menu ainda nao adicionado")
+                .setMessage("Ainda sera implementado")
+                .setPositiveButton("Fechar aviso") { dialogInterface, i -> // é o que o alerta vai fazer quando o botão for pressionado
+                    Toast.makeText(applicationContext, "Vai ser adicionado", Toast.LENGTH_LONG).show()
+                }
+                .show()
+        }
 
         val button5 = findViewById<Button>(R.id.button5)
         button5.setOnClickListener {

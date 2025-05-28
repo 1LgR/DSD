@@ -12,6 +12,7 @@ import androidx.activity.enableEdgeToEdge
 class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        overridePendingTransition(R.transition.fadein, R.transition.fadeout);
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
@@ -23,7 +24,7 @@ class MainActivity : ComponentActivity() {
                 .setIconAttribute(android.R.attr.alertDialogIcon)
                 .setTitle("Menu ainda nao adicionado")
                 .setMessage("Ainda sera implementado")
-                .setPositiveButton("Fechar aviso") { dialogInterface, i -> // set what would happen when positive button is clicked
+                .setPositiveButton("Fechar aviso") { dialogInterface, i -> // é o que o alerta vai fazer quando o botão for pressionado
                     Toast.makeText(applicationContext, "Vai ser adicionado", Toast.LENGTH_LONG).show()
                 }
                 .show()
