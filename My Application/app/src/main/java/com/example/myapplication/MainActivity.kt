@@ -1,19 +1,12 @@
 package com.example.myapplication
 
+import android.app.AlertDialog
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Toast
 import androidx.activity.ComponentActivity
-import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.foundation.layout.padding
-import androidx.compose.material3.Scaffold
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.myapplication.ui.theme.MyApplicationTheme
-import android.content.Intent
 
 
 class MainActivity : ComponentActivity() {
@@ -22,6 +15,19 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
+
+
+        val button2 = findViewById<Button>(R.id.button2)
+        button2.setOnClickListener {
+            val alertDialog = AlertDialog.Builder(this)
+                .setIconAttribute(android.R.attr.alertDialogIcon)
+                .setTitle("Menu ainda nao adicionado")
+                .setMessage("Ainda sera implementado")
+                .setPositiveButton("Fechar aviso") { dialogInterface, i -> // set what would happen when positive button is clicked
+                    Toast.makeText(applicationContext, "Vai ser adicionado", Toast.LENGTH_LONG).show()
+                }
+                .show()
+        }
 
         val button7 = findViewById<Button>(R.id.button7)
         button7.setOnClickListener {

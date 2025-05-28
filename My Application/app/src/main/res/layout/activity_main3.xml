@@ -109,8 +109,8 @@
         android:id="@+id/textView"
         android:layout_width="150dp"
         android:layout_height="39dp"
-        android:layout_marginStart="172dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="144dp"
         android:text="Busca"
         android:textColor="#F2F2F2"
         android:textSize="24sp"
@@ -118,9 +118,10 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <SearchView
-        android:layout_width="409dp"
-        android:layout_height="43dp"
-        android:layout_marginTop="200dp"
+        android:layout_width="364dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="196dp"
         android:background="@drawable/buscar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
